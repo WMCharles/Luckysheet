@@ -16,7 +16,33 @@ const options = {
             "column": 18, //the number of columns in a sheet
             "defaultRowHeight": 19, //Customized default row height
             "defaultColWidth": 73, //Customized default column width
-            "celldata": [], //Initial the cell data
+            "celldata": [
+                {
+                    "r": 0,
+                    "c": 0,
+                    "v": {
+                        ct: { fa: "General", t: "g" },
+                        m: "value1",
+                        v: "First Name"
+                    }
+                }, {
+                    "r": 0,
+                    "c": 1,
+                    "v": {
+                        ct: { fa: "General", t: "g" },
+                        m: "value2",
+                        v: "Second Name"
+                    }
+                }, {
+                    "r": 0,
+                    "c": 2,
+                    "v": {
+                        ct: { fa: "General", t: "g" },
+                        m: "value3",
+                        v: "Salary"
+                    }
+                }
+            ], //Initial the cell data
             "config": {
                 "merge": {}, //merged cells
                 "rowlen": {}, //Table row height
@@ -67,8 +93,8 @@ const options = {
             "luckysheet_alternateformat_save_modelCustom": [], //Customize alternate colors	
             "luckysheet_conditionformat_save": {},//condition format
             "frozen": {
-                type: 'rangeBoth',
-                range: { row_focus: 1, column_focus: 1 }
+                type: 'row',
+                range: { row_focus: 0, column_focus: 2 }
             }, //freeze row and column configuration
             "chart": [], //Chart configuration
             "zoomRatio": 1, // zoom ratio
