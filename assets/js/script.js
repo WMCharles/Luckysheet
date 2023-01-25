@@ -66,7 +66,10 @@ const options = {
             "luckysheet_alternateformat_save": [], //Alternate colors
             "luckysheet_alternateformat_save_modelCustom": [], //Customize alternate colors	
             "luckysheet_conditionformat_save": {},//condition format
-            "frozen": {}, //freeze row and column configuration
+            "frozen": {
+                type: 'rangeBoth',
+                range: { row_focus: 1, column_focus: 1 }
+            }, //freeze row and column configuration
             "chart": [], //Chart configuration
             "zoomRatio": 1, // zoom ratio
             "image": [], //image
